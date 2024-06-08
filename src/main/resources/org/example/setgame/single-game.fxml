@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="singleGamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.setgame.singleplayer.SingleGame">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="248.0" layoutY="479.0" stroke="BLACK" strokeType="INSIDE" width="202.0" />
+        <ImageView fitHeight="187.0" fitWidth="376.0" layoutX="196.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/SET_logo.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#de2e2e" height="63.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1280.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#de2e2e" height="63.0" layoutY="657.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1280.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebeb" height="554.0" layoutX="681.0" layoutY="80.0" stroke="TRANSPARENT" strokeType="INSIDE" width="574.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="272.0" layoutY="409.0" stroke="BLACK" strokeType="INSIDE" width="153.0" />
+
+        <!-- Label for isASetAnimation -->
+        <Label fx:id="animationLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="161.0" layoutY="560.0" prefHeight="53.0" prefWidth="376.0" textAlignment="CENTER" textFill="#de2e2e">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+
+        <!-- button to reload cards -->
+        <Label layoutX="281.0" layoutY="414.0" onMouseClicked="#handleReloadCards" text="Reload cards">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+
+        <!-- button to add three cards to the game -->
+        <Label layoutX="265.0" layoutY="484.0" onMouseClicked="#handleAddThreeCards" text="Add three cards">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+
+        <!-- label for player points -->
+        <Label fx:id="pointsLabel" layoutX="280.0" layoutY="317.0">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+
+        <!-- back button -->
+        <ImageView fitHeight="98.0" fitWidth="104.0" layoutX="26.0" layoutY="63.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/back_arrow.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+
+        <!-- ImageViews for playing cards -->
+        <ImageView fx:id="card0" fitHeight="175.0" fitWidth="124.0" layoutX="704.0" layoutY="93.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card1" fitHeight="175.0" fitWidth="124.0" layoutX="704.0" layoutY="273.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card2" fitHeight="175.0" fitWidth="124.0" layoutX="704.0" layoutY="455.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card3" fitHeight="175.0" fitWidth="124.0" layoutX="843.0" layoutY="93.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card4" fitHeight="175.0" fitWidth="124.0" layoutX="843.0" layoutY="273.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card5" fitHeight="175.0" fitWidth="124.0" layoutX="843.0" layoutY="455.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card6" fitHeight="175.0" fitWidth="124.0" layoutX="981.0" layoutY="93.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card7" fitHeight="175.0" fitWidth="124.0" layoutX="981.0" layoutY="273.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card8" fitHeight="175.0" fitWidth="124.0" layoutX="981.0" layoutY="455.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card9" fitHeight="175.0" fitWidth="124.0" layoutX="1120.0" layoutY="93.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card10" fitHeight="175.0" fitWidth="124.0" layoutX="1120.0" layoutY="273.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+        <ImageView fx:id="card11" fitHeight="175.0" fitWidth="124.0" layoutX="1120.0" layoutY="455.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+
+
+    </children>
+</Pane>

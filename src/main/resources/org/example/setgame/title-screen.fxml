@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="titleSreenPane" fx:controller="org.example.setgame.otherScreens.TitleScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #DE2E2E;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#773b85" height="1227.0" layoutX="-245.0" layoutY="-530.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1542.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1296.0" layoutX="-220.0" layoutY="-736.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1542.0" />
+      <ImageView fitHeight="389.0" fitWidth="643.0" layoutX="319.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/SET_logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="551.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Marita Alzeeb, Lara Schrodt" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

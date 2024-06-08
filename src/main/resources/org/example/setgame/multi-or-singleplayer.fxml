@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mulOrSingleplayerPane" fx:controller="org.example.setgame.otherScreens.MulOrSingleplayer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #DE2E2E;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#773b85" height="1227.0" layoutX="-245.0" layoutY="-530.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1542.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1296.0" layoutX="-220.0" layoutY="-736.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="1542.0" />
+        <ImageView fitHeight="173.0" fitWidth="400.0" layoutX="485.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/SET_logo.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="551.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Marita Alzeeb, Lara Schrodt" textAlignment="CENTER">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="569.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="568.0" layoutY="445.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+        <Label onMouseClicked="#handleOnePlayerClick" layoutX="582.0" layoutY="379.0" text="One player">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Label onMouseClicked="#handleTwoPlayerClick" layoutX="579.0" layoutY="450.0" text="Two players">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <ImageView fitHeight="98.0" fitWidth="104.0" layoutX="25.0" layoutY="24.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/back_arrow.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+    </children>
+</Pane>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/src/main/java/org/example/setgame/gameLogic/Cards.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/org/example/setgame/gameLogic/SetChecker.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/org/example/setgame/otherScreens/GameRules.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/org/example/setgame/otherScreens/Menu.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/org/example/setgame/otherScreens/MulOrSingleplayer.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/org/example/setgame/otherScreens/TitleScreen.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/org/example/setgame/singleplayer/SingleGame.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/org/example/setgame/Application.java;C:/Users/Lara/IdeaProjects/SetGame/src/main/java/module-info.java;C:/Users/Lara/IdeaProjects/SetGame/pom.xml" />
+  </component>
+</project>

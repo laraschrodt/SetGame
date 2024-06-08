@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="namePopUpPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.setgame.multiplayer.MultiNamePopUp">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#de2e2e" height="63.0" layoutY="367.0" stroke="TRANSPARENT" strokeType="INSIDE" width="729.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#de2e2e" height="63.0" stroke="TRANSPARENT" strokeType="INSIDE" width="729.0" />
+      <Label layoutX="215.0" layoutY="105.0" text="Please enter player names:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="189.0" layoutY="166.0" text="Player 1:">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="189.0" layoutY="252.0" text="Player 2:" textFill="#de2e2e">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="player1Name" alignment="CENTER" layoutX="320.0" layoutY="164.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="player2Name" alignment="CENTER" layoutX="320.0" layoutY="250.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="390.0" layoutY="314.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+      <Label layoutX="405.0" layoutY="319.0" onMouseClicked="#handleStartButtonClick" text="Start">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="89.0" layoutY="62.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/back_arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="346.0" layoutY="205.0" text="benutzt die linke Maustaste">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="340.0" layoutY="289.0" text="benutzt die rechte Maustaste">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>

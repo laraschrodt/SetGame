@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="gameRulesPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #DE2E2E;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.setgame.otherScreens.GameRules">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#773b85" height="1227.0" layoutX="-245.0" layoutY="-530.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1542.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1296.0" layoutX="-220.0" layoutY="-736.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1542.0" />
+        <Text layoutX="551.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Marita Alzeeb, Lara Schrodt" textAlignment="CENTER">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="513.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game rules">
+            <font>
+                <Font name="System Bold" size="48.0" />
+            </font>
+        </Text>
+        <Text layoutX="235.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objective: Identify a SET of 3 cards from 12 face-up cards on the table.">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="166.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A SET consists of 3 cards where each feature is either all the same or all &#10;different on each card. &#10;Correct SETs earn the player a point, and the dealer replaces the cards.&#10;The game ends when the deck is depleted. The player with the most SETs wins.&#10;&#10;Sets could be:" textAlignment="CENTER" wrappingWidth="930.7994384765625">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="213.0" fitWidth="471.0" layoutX="403.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/cards_example.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="98.0" fitWidth="104.0" layoutX="25.0" layoutY="24.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/back_arrow.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+    </children>
+</Pane>
+
