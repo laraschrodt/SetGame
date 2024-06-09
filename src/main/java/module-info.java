@@ -11,11 +11,14 @@ module org.example.setgame {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires javafx.media;
 
     opens org.example.setgame to javafx.fxml;
     exports org.example.setgame;
     opens org.example.setgame.otherScreens to javafx.fxml;
     opens org.example.setgame.singleplayer to javafx.fxml;
     opens org.example.setgame.multiplayer to javafx.fxml;
+    exports org.example.setgame.otherScreens;
+    exports org.example.setgame.multiplayer;
 
 }

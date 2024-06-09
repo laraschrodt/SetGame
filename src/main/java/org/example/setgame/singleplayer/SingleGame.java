@@ -34,6 +34,8 @@ public class SingleGame {
     private Player player;
 
     @FXML
+    public ImageView backArrow;
+    @FXML
     public Label animationLabel;
     @FXML
     public Label pointsLabel;
@@ -91,6 +93,12 @@ public class SingleGame {
     @FXML
     private void handleBackButtonClick(MouseEvent event) {
         BackButton.handleBackButtonClick(event, singleGamePane);
+
+        try {
+            SingleSavedGames.savePlayer(player);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void initialize() {
@@ -170,8 +178,12 @@ public class SingleGame {
         }
     }
 
-    public void setPlayers(Player player) {
+    public void setPlayerPoints(Player player) {
         this.player = player;
         pointsLabel.setText("Points: " + player.getPoints());
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
     }
 }

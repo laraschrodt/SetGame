@@ -95,6 +95,12 @@ public class MultiGame {
     @FXML
     private void handleBackButtonClick(MouseEvent event) {
         BackButton.handleBackButtonClick(event, multiGamePane);
+
+        try {
+            MultiSavedGames.savePlayers(player1, player2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void initialize() {

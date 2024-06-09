@@ -9,6 +9,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.animation.FadeTransition;
+import org.example.setgame.gameLogic.MusicPlayer;
 
 import java.io.IOException;
 import java.net.URL;
@@ -21,6 +22,9 @@ public class TitleScreen implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        MusicPlayer musicPlayer = MusicPlayer.getInstance();
+        musicPlayer.play();
+
         FadeTransition fadeTransition = new FadeTransition(Duration.seconds(3), titleSreenPane);
         fadeTransition.setFromValue(1.0);
         fadeTransition.setToValue(0.0);

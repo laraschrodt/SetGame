@@ -8,6 +8,8 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
+import org.example.setgame.buttons.FxmlLoader;
+import org.example.setgame.gameLogic.MusicPlayer;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,28 +24,12 @@ public class Menu implements Initializable {
 
     @FXML
     private void handlePlayClick(MouseEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/setgame/multi-or-singleplayer.fxml"));
-            Parent root = loader.load();
-
-            Stage stage = (Stage) ((Label) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        FxmlLoader.loadFxml("/org/example/setgame/multi-or-singleplayer.fxml", event);
     }
 
     @FXML
     private void handleGameRulesClick(MouseEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/setgame/game-rules.fxml"));
-            Parent root = loader.load();
-
-            Stage stage = (Stage) ((Label) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        FxmlLoader.loadFxml("/org/example/setgame/game-rules.fxml", event);
     }
 
     @FXML
@@ -52,6 +38,13 @@ public class Menu implements Initializable {
         stage.close();
     }
 
+    public void handleSavesClicked(MouseEvent event) {
+        FxmlLoader.loadFxml("/org/example/setgame/saves-mul-or-single.fxml", event);
+    }
+
+    public void handleOptionsClicked(MouseEvent event) {
+        FxmlLoader.loadFxml("/org/example/setgame/options.fxml", event);
+    }
 }
 
 

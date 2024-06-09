@@ -10,7 +10,6 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import org.example.setgame.buttons.BackButton;
 import org.example.setgame.gameLogic.Player;
-import org.example.setgame.multiplayer.MultiGame;
 
 import java.io.IOException;
 
@@ -35,7 +34,7 @@ public class SingleNamePopUp {
                 Parent root = loader.load();
 
                 SingleGame singleGameController = loader.getController();
-                singleGameController.setPlayers(player);
+                singleGameController.setPlayerPoints(player);
 
                 Stage stage = (Stage) namePopUpPane.getScene().getWindow();
                 stage.setScene(new Scene(root));

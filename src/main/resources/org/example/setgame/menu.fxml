@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #DE2E2E;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.setgame.otherScreens.Menu">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #DE2E2E;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.setgame.otherScreens.Menu">
     <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#773b85" height="1227.0" layoutX="-245.0" layoutY="-530.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1542.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1296.0" layoutX="-220.0" layoutY="-736.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="1542.0" />
@@ -23,8 +23,8 @@
                 <Font size="14.0" />
             </font>
         </Text>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="602.0" layoutY="305.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
-        <Label onMouseClicked="#handlePlayClick" layoutX="619.0" layoutY="310.0" text="Play">
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="600.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+        <Label layoutX="619.0" layoutY="311.0" onMouseClicked="#handlePlayClick" text="Play">
             <font>
                 <Font size="24.0" />
             </font>
@@ -32,10 +32,10 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Label>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="569.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="587.0" layoutY="445.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="607.0" layoutY="517.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-        <Label layoutX="582.0" layoutY="379.0" onMouseClicked="#handleGameRulesClick" text="Game rules">
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="568.0" layoutY="449.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="587.0" layoutY="524.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="606.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
+        <Label layoutX="581.0" layoutY="454.0" onMouseClicked="#handleGameRulesClick" text="Game rules">
             <font>
                 <Font size="24.0" />
             </font>
@@ -43,7 +43,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Label>
-        <Label layoutX="598.0" layoutY="449.0" text="Options">
+        <Label layoutX="599.0" layoutY="529.0" onMouseClicked="#handleOptionsClicked" text="Options">
             <font>
                 <Font size="24.0" />
             </font>
@@ -51,7 +51,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Label>
-        <Label onMouseClicked="#handleExitClick" layoutX="623.0" layoutY="522.0" text="Exit">
+        <Label layoutX="622.0" layoutY="605.0" onMouseClicked="#handleExitClick" text="Exit">
             <font>
                 <Font size="24.0" />
             </font>
@@ -59,6 +59,14 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="557.0" layoutY="375.0" stroke="BLACK" strokeType="INSIDE" width="167.0" />
+      <Label layoutX="569.0" layoutY="380.0" onMouseClicked="#handleSavesClicked" text="Saved Games">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
     </children>
 </Pane>
-

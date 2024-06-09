@@ -56,7 +56,7 @@
         </Label>
 
         <!-- back button -->
-        <ImageView fitHeight="98.0" fitWidth="104.0" layoutX="26.0" layoutY="63.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="backArrow" fitHeight="98.0" fitWidth="104.0" layoutX="26.0" layoutY="63.0" onMouseClicked="#handleBackButtonClick" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@images/back_arrow.png" />
             </image>
