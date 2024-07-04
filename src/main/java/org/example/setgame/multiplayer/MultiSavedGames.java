@@ -125,7 +125,7 @@ public class MultiSavedGames {
             String playerName2 = playerList.get(i)[1].getName();
             if ((playerName1 + " & " + playerName2).equals(selectedPlayerNames)) {
                 playerList.remove(i);
-                break;
+                break; 
             }
         }
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(multiGameSaves))) {
