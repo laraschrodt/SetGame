@@ -92,11 +92,21 @@ public class SingleAddThreeCards {
     @FXML
     private void handleCardClick(MouseEvent event) {
         ImageView clickedCard = (ImageView) event.getSource();
-        if (clickCount < 3) {
+        boolean isDuplicate = false;
+
+        for (int i = 0; i < clickCount; i++) {
+            if (clickedCards[i] == clickedCard) {
+                isDuplicate = true;
+                break;
+            }
+        }
+
+        if (!isDuplicate && clickCount < 3) {
             clickedCards[clickCount] = clickedCard;
             showX(clickedCard, clickCount);
             clickCount++;
         }
+
         if (clickCount == 3) {
             if (setChecker.isASet(Arrays.asList(clickedCards))) {
                 AnimationHelper.isSetAnimation(animationLabel, singleAddThreeCards, "Is a Set!");

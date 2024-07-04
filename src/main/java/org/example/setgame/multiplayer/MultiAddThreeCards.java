@@ -124,11 +124,21 @@ public class MultiAddThreeCards {
     }
 
     private void handlePlayer1CardClick(ImageView clickedCard) {
-        if (clickCount1 < 3) {
+        boolean isDuplicate = false;
+
+        for (int i = 0; i < clickCount1; i++) {
+            if (clickedCards1[i] == clickedCard) {
+                isDuplicate = true;
+                break;
+            }
+        }
+
+        if (!isDuplicate && clickCount1 < 3) {
             clickedCards1[clickCount1] = clickedCard;
             showXPlayer1(clickedCard, clickCount1);
             clickCount1++;
         }
+
         if (clickCount1 == 3) {
             if (setChecker.isASet(Arrays.asList(clickedCards1))) {
                 AnimationHelper.isSetAnimation(animationLabel, multiAddThreeCardsPane, "Player 1 found a Set!");
@@ -144,11 +154,21 @@ public class MultiAddThreeCards {
     }
 
     private void handlePlayer2CardClick(ImageView clickedCard) {
-        if (clickCount2 < 3) {
+        boolean isDuplicate = false;
+
+        for (int i = 0; i < clickCount2; i++) {
+            if (clickedCards2[i] == clickedCard) {
+                isDuplicate = true;
+                break;
+            }
+        }
+
+        if (!isDuplicate && clickCount2 < 3) {
             clickedCards2[clickCount2] = clickedCard;
             showXPlayer2(clickedCard, clickCount2);
             clickCount2++;
         }
+
         if (clickCount2 == 3) {
             if (setChecker.isASet(Arrays.asList(clickedCards2))) {
                 AnimationHelper.isSetAnimation(animationLabel, multiAddThreeCardsPane, "Player 2 found a Set!");
@@ -162,6 +182,7 @@ public class MultiAddThreeCards {
             clickCount2 = 0;
         }
     }
+
 
     private void showXPlayer1(ImageView card, int index) {
         Text text = new Text("X");
